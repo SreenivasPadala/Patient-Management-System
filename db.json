@@ -1,0 +1,22 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Surya",
+      "address": "Bangalore",
+      "temparature": "102"
+    },
+    {
+      "id": 2,
+      "name": "Patient2",
+      "address": "Visakhapatnam",
+      "temparature": "103"
+    },
+    {
+      "id": 3,
+      "name": "Patient 3",
+      "address": "Hyderabad",
+      "temparature": "106"
+    }
+  ]
+}

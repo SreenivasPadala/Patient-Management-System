@@ -1,0 +1,24 @@
+<div class="table-responsive">
+    <table class="table table-bordered" *ngIf="patients && patients.length">
+        <thead>
+            <tr class="bg-primary">
+                <th>Name</th>
+                <th>Address</th>
+                <th>Temparature</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patient of patients" >
+                <td>{{ patient.name }}</td>
+                <td>{{ patient.address}}</td>
+                <td>{{ patient.temparature}}</td>
+                <td>
+                    <button class="btn btn-info marginRIght" (click)="viewData(patient.id)">View</button>
+                    <button class="btn btn-warning marginRIght" (click)="EditPatient(patient.id)">Edit</button>
+                    <button class="btn btn-danger marginRIght" (click)="delete(patient.id);">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
